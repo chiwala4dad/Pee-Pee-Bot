@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-   
+   "test": "nf run nodemon trump.js"
   },
   "author": "",
   "license": "ISC",
