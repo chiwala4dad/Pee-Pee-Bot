@@ -1,1 +1,1 @@
-worker: node trump.js
+worker node trump.js
