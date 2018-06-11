@@ -1,1 +1,1 @@
-worker node trump.js
+DiscordJS: node trump.js
