@@ -16,8 +16,8 @@ client.on("ready", () => {
 client.on("message", message => {
 
    // if the sent message was "ping" then respond with "pong"
-   if (message.content === "ping") {
-       message.channel.send("pong");
+   if (message.content === "Thank you") {
+       message.channel.send("Kanye, Very cool!");
 
    // if the sent message was "!trump" then play a random trump quote from our data directory
    } else if (message.content === "#pp") {
