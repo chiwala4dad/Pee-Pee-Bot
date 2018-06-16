@@ -20,7 +20,10 @@ client.on("message", message => {
        message.channel.send("Kanye, Very cool!");
 
    // if the sent message was "!trump" then play a random trump quote from our data directory
-   } else if (message.content === "#pp") {
+   } else if (message.content === "exec order") {
+    message.channel.send("https://images.penguinrandomhouse.com/cover/9781524734398")
+   
+    } else if (message.content === "#pp") {
 
        // make sure the user is in a voice channel
        if (message.member.voiceChannel) {
