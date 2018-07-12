@@ -24,7 +24,7 @@ client.on("message", message => {
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
        }
        
-       if (message.content === "1") {
+       if (message.content === "#1") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -40,7 +40,7 @@ client.on("message", message => {
                    });
                })
        }
-       if (message.content === "2") {
+       if (message.content === "#2") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -56,7 +56,7 @@ client.on("message", message => {
                    });
                })
        }
-        if (message.content === "3") {
+        if (message.content === "#3") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -72,7 +72,7 @@ client.on("message", message => {
                    });
                })
        }
-        if (message.content === "4") {
+        if (message.content === "#4") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -88,7 +88,7 @@ client.on("message", message => {
                    });
                })
        }
-        if (message.content === "5") {
+        if (message.content === "#5") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -104,7 +104,7 @@ client.on("message", message => {
                    });
                })
        }
-        if (message.content === "6") {
+        if (message.content === "#6") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -120,7 +120,7 @@ client.on("message", message => {
                    });
                })
        }
-        if (message.content === "7") {
+        if (message.content === "#7") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -136,7 +136,7 @@ client.on("message", message => {
                    });
                })
        }
-        if (message.content === "8") {
+        if (message.content === "#8") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -152,7 +152,7 @@ client.on("message", message => {
                    });
                })
        }
-        if (message.content === "9") {
+        if (message.content === "#9") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -168,7 +168,7 @@ client.on("message", message => {
                    });
                })
        }
-   if (message.content === "10") {
+   if (message.content === "#10") {
           message.member.voiceChannel.join()
                .then(connection => {
 
@@ -184,7 +184,7 @@ client.on("message", message => {
                    });
                })
        }
-        if (message.content === "11") {
+        if (message.content === "#11") {
           message.member.voiceChannel.join()
                .then(connection => {
 
