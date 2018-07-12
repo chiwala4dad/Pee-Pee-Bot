@@ -20,16 +20,31 @@ client.on("message", message => {
 
    // if the sent message was "!trump" then play a random trump quote from our data directory
    } 
-  else  if (message.content === "exec order") {
+     else if (message.content === "1") {
+      selection = "ITS LIT.mp3"
+      message.member.voiceChannel.join()
+               .then(connection => {
+                  const dispatcher = connection.playFile("./data/" + selection);
+
+                   // disconnect from the voice channel when the quote is over
+                   dispatcher.on("end", () => {
+                       message.member.voiceChannel.leave();
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                   }
+               )}
+                   )}
+                   
+ else if (message.content === "exec order") {
     message.channel.send("https://images.penguinrandomhouse.com/cover/9781524734398")
    
     } 
-    else if (message.content === "#pp play"){ 
+   else if (message.content === "#pp play"){ 
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
        }
     
                })
                
+   client.on("message", message => {
     if (message.content === "#pp") {
 
        // make sure the user is in a voice channel
@@ -53,7 +68,6 @@ client.on("message", message => {
                })
                .catch(console.log);
        }
-   
-
-}
+    }
+});
 client.login(process.env.BOT_TOKEN);
