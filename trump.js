@@ -107,9 +107,7 @@ client.on("message", message => {
    else if (message.content === "#pp play"){ 
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
        }
-    if (message.content === "sound list"){
-      message.channel.send("aight bro peep the list http://tiny.cc/ppBot")
-    }
+  
                
                
    
