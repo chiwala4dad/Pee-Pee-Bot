@@ -7,7 +7,7 @@ const client = new discord.Client();
 
 // store the filenames of all the audio files for sampling later
 const audioFiles = fs.readdirSync("./data");
-var selection
+
 
 client.on("ready", () => {
    console.log("I'm ready!");
@@ -134,7 +134,9 @@ client.on("message", message => {
                })
                .catch(console.log);
        }
+    
     }
     }
 });
+
 client.login(process.env.BOT_TOKEN)
