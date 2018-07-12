@@ -21,7 +21,7 @@ client.on("message", message => {
 
    // if the sent message was "!trump" then play a random trump quote from our data directory
    } 
-   if (message.content === "1"){
+   else if (message.content === "1"){
      selection = "AB honor roll all F's you retarded.mp3"
      {
       
