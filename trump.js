@@ -8,7 +8,7 @@ const client = new discord.Client();
 // store the filenames of all the audio files for sampling later
 const audioFiles = fs.readdirSync("./data");
 var selection
-var Ronie
+var Ronie === false
 client.on("ready", () => {
    console.log("I'm ready!");
 });
@@ -23,7 +23,7 @@ client.on("message", message => {
    } 
    if (message.content === "1"){
      selection = "AB honor roll all F's you retarded.mp3"
-     var Ronie === true
+     Ronie === true
    }
     if (message.content === "2"){
      selection = "About a week ago.mp3"
