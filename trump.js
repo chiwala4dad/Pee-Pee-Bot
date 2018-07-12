@@ -55,131 +55,33 @@ client.on("message", message => {
    }
     if (message.content === "3"){
      selection = "ITS LIT.mp3"
-    {
-      
-      message.member.voiceChannel.join()
-               .then(connection => {
-                  const dispatcher = connection.playFile("./data/" + selection);
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
-                   }
-               )}
-                   )}
-   }
+   
     if (message.content === "4"){
-     selection = "Kyle A Boogie Wit Da Hoodie and Aminés 2017 XXL Freshman Cypher (1).mp3"
-     {
-      
-      message.member.voiceChannel.join()
-               .then(connection => {
-                  const dispatcher = connection.playFile("./data/" + selection);
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
-                   }
-               )}
-                   )}
+   
    }
     if (message.content === "5"){
      selection = "My names Nino.mp3"
-  {
-      
-      message.member.voiceChannel.join()
-               .then(connection => {
-                  const dispatcher = connection.playFile("./data/" + selection);
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
-                   }
-               )}
-                   )}
+  
    }
     if (message.content === "6"){
      selection = "Not the Yuttas"
-{
-      
-      message.member.voiceChannel.join()
-               .then(connection => {
-                  const dispatcher = connection.playFile("./data/" + selection);
 
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
-                   }
-               )}
-                   )}
    }
     if (message.content === "7"){
      selection = "Not the Yuttas.mp3"
-    {
-      
-      message.member.voiceChannel.join()
-               .then(connection => {
-                  const dispatcher = connection.playFile("./data/" + selection);
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
-                   }
-               )}
-                   )}
+    
    }
     if (message.content === "8"){
      selection = "Original Ya Ya Ya YEET! Cx.mp3"
-    {
-      
-      message.member.voiceChannel.join()
-               .then(connection => {
-                  const dispatcher = connection.playFile("./data/" + selection);
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
-                   }
-               )}
-                   )}
+    
    }
     if (message.content === "9"){
      selection = "Pnb rock I just wanna eat ur pussy Dohonna.mp3"
-     {
-      
-      message.member.voiceChannel.join()
-               .then(connection => {
-                  const dispatcher = connection.playFile("./data/" + selection);
 
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
-                   }
-               )}
-                   )}
    }
     if (message.content === "10"){
      selection = "THE JONTRON RANT.mp3"
-    {
-      
-      message.member.voiceChannel.join()
-               .then(connection => {
-                  const dispatcher = connection.playFile("./data/" + selection);
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
-                   }
-               )}
-                   )}
+   
    }
     if (message.content === "11"){
      selection = "pharogz-cra3y-prod-by-kendox-[AudioTrimmer.com].mp3"
