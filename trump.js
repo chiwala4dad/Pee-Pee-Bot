@@ -1,4 +1,3 @@
-
 const fs = require("fs");
 const _ = require("underscore");
 const moment = require("moment");
@@ -8,7 +7,7 @@ const client = new discord.Client();
 
 // store the filenames of all the audio files for sampling later
 const audioFiles = fs.readdirSync("./data");
-
+const selection 
 client.on("ready", () => {
    console.log("I'm ready!");
 });
@@ -20,10 +19,28 @@ client.on("message", message => {
        message.channel.send("Kanye, Very cool!");
 
    // if the sent message was "!trump" then play a random trump quote from our data directory
-   } else if (message.content === "exec order") {
+   } 
+   if (message.content === "exec order") {
     message.channel.send("https://images.penguinrandomhouse.com/cover/9781524734398")
    
-    } else if (message.content === "#pp") {
+    } 
+    if (message.content === "#pp play"){ 
+      message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
+       }
+      if (message.content === "1") {
+      selection = "ITS LIT.mp3"
+      message.member.voiceChannel.join()
+               .then(connection => {
+                  const dispatcher = connection.playFile("./data/" + selection);
+
+                   // disconnect from the voice channel when the quote is over
+                   dispatcher.on("end", () => {
+                       message.member.voiceChannel.leave();
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                   });
+               })
+               
+    if (message.content === "#pp") {
 
        // make sure the user is in a voice channel
        if (message.member.voiceChannel) {
@@ -47,6 +64,6 @@ client.on("message", message => {
                .catch(console.log);
        }
    }
-});
+}
+})
 client.login(process.env.BOT_TOKEN);
-
