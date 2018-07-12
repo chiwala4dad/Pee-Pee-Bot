@@ -8,6 +8,7 @@ const client = new discord.Client();
 // store the filenames of all the audio files for sampling later
 const audioFiles = fs.readdirSync("./data");
 var selection
+var Ronie
 client.on("ready", () => {
    console.log("I'm ready!");
 });
@@ -20,8 +21,52 @@ client.on("message", message => {
 
    // if the sent message was "!trump" then play a random trump quote from our data directory
    } 
-     else if (message.content === "1") {
-      selection = "ITS LIT.mp3"
+   if (message.content === "1"){
+     selection = "AB honor roll all F's you retarded.mp3"
+     Ronie === true
+   }
+    if (message.content === "2"){
+     selection = "About a week ago.mp3"
+     Ronie === true
+   }
+    if (message.content === "3"){
+     selection = "ITS LIT.mp3"
+     Ronie === true
+   }
+    if (message.content === "4"){
+     selection = "Kyle A Boogie Wit Da Hoodie and Aminés 2017 XXL Freshman Cypher (1).mp3"
+     Ronie === true
+   }
+    if (message.content === "5"){
+     selection = "My names Nino.mp3"
+     Ronie === true
+   }
+    if (message.content === "6"){
+     selection = "Not the Yuttas"
+     Ronie === true
+   }
+    if (message.content === "7"){
+     selection = "Not the Yuttas.mp3"
+     Ronie === true
+   }
+    if (message.content === "8"){
+     selection = "Original Ya Ya Ya YEET! Cx.mp3"
+     Ronie === true
+   }
+    if (message.content === "9"){
+     selection = "Pnb rock I just wanna eat ur pussy Dohonna.mp3"
+     Ronie === true
+   }
+    if (message.content === "10"){
+     selection = "THE JONTRON RANT.mp3"
+     Ronie === true
+   }
+    if (message.content === "11"){
+     selection = "pharogz-cra3y-prod-by-kendox-[AudioTrimmer.com].mp3"
+     Ronie === true
+   }
+     if (Ronie === true) {
+      
       message.member.voiceChannel.join()
                .then(connection => {
                   const dispatcher = connection.playFile("./data/" + selection);
@@ -41,7 +86,9 @@ client.on("message", message => {
    else if (message.content === "#pp play"){ 
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
        }
-    
+    if (message.content === "sound list"){
+      message.channel.send("aight bro peep the list http://tiny.cc/ppBot")
+    }
                
                
    
@@ -70,4 +117,4 @@ client.on("message", message => {
        }
     }
 });
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN)
