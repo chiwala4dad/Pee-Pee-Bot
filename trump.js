@@ -23,7 +23,7 @@ client.on("message", message => {
    } 
    if (message.content === "1"){
      selection = "AB honor roll all F's you retarded.mp3"
-     Ronie === true
+     var Ronie === true
    }
     if (message.content === "2"){
      selection = "About a week ago.mp3"
