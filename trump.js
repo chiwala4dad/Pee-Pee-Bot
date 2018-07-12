@@ -23,6 +23,23 @@ client.on("message", message => {
    else if (message.content === "#pp play"){ 
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
        }
+       
+       if (message.content === "1") {
+          message.member.voiceChannel.join()
+               .then(connection => {
+
+               
+
+                   // play the random audio file
+                   const dispatcher = connection.playFile("./data/" + "AB honor roll all F's you retarded.mp3" );
+
+                   // disconnect from the voice channel when the quote is over
+                   dispatcher.on("end", () => {
+                       message.member.voiceChannel.leave();
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                   });
+               })
+       }
   
     if (message.content === "#pp") {
 
