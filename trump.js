@@ -20,14 +20,14 @@ client.on("message", message => {
 
    // if the sent message was "!trump" then play a random trump quote from our data directory
    } 
-   if (message.content === "exec order") {
+  else  if (message.content === "exec order") {
     message.channel.send("https://images.penguinrandomhouse.com/cover/9781524734398")
    
     } 
-    if (message.content === "#pp play"){ 
+    else if (message.content === "#pp play"){ 
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
        }
-      if (message.content === "1") {
+     else  if (message.content === "1") {
       selection = "ITS LIT.mp3"
       message.member.voiceChannel.join()
                .then(connection => {
