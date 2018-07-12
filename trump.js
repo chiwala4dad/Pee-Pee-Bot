@@ -36,7 +36,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "AB honor roll all F's you retarded.mp3" + "\n");
                    });
                })
        }
@@ -52,7 +52,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "About a week ago.mp3" + "\n");
                    });
                })
        }
@@ -68,7 +68,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "ITS LIT.mp3" + "\n");
                    });
                })
        }
@@ -84,7 +84,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Kyle A Boogie Wit Da Hoodie and Aminés 2017 XXL Freshman Cypher (1).mp3" + "\n");
                    });
                })
        }
@@ -100,7 +100,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "My names Nino.mp3" + "\n");
                    });
                })
        }
@@ -116,7 +116,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Not the Yuttas" + "\n");
                    });
                })
        }
@@ -132,7 +132,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Not the Yuttas.mp3" + "\n");
                    });
                })
        }
@@ -148,7 +148,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Original Ya Ya Ya YEET! Cx.mp3" + "\n");
                    });
                })
        }
@@ -164,7 +164,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Pnb rock I just wanna eat ur pussy Dohonna.mp3" + "\n");
                    });
                })
        }
@@ -180,7 +180,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "THE JONTRON RANT.mp3" + "\n");
                    });
                })
        }
@@ -196,9 +196,12 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "pharogz-cra3y-prod-by-kendox-[AudioTrimmer.com].mp3" + "\n");
                    });
                })
+       }
+       if (message.content === "sound list"){
+         message.channel.send("Aight bro peep the list :eyes:  http://tiny.cc/ppBot")
        }
     else if (message.content === "#pp") {
 
