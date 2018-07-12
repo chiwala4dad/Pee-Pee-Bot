@@ -137,5 +137,6 @@ client.on("message", message => {
                .catch(console.log);
        }
     }
+    }
 });
 client.login(process.env.BOT_TOKEN)
