@@ -41,7 +41,7 @@ client.on("message", message => {
                })
        }
   
-    if (message.content === "#pp") {
+    else if (message.content === "#pp") {
 
        // make sure the user is in a voice channel
        if (message.member.voiceChannel) {
