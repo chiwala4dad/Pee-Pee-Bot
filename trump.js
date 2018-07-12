@@ -27,17 +27,7 @@ client.on("message", message => {
     else if (message.content === "#pp play"){ 
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
        }
-     else  if (message.content === "1") {
-      selection = "ITS LIT.mp3"
-      message.member.voiceChannel.join()
-               .then(connection => {
-                  const dispatcher = connection.playFile("./data/" + selection);
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + randAudioFile + "\n");
-                   });
+    
                })
                
     if (message.content === "#pp") {
@@ -63,7 +53,7 @@ client.on("message", message => {
                })
                .catch(console.log);
        }
-   }
+   
+
 }
-})
 client.login(process.env.BOT_TOKEN);
