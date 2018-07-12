@@ -42,9 +42,9 @@ client.on("message", message => {
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
        }
     
-               })
                
-   client.on("message", message => {
+               
+   
     if (message.content === "#pp") {
 
        // make sure the user is in a voice channel
