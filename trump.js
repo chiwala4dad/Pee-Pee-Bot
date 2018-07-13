@@ -5,10 +5,26 @@ const discord = require('discord.js');
 const client = new discord.Client();
 // store the filenames of all the audio files for sampling later
 const audioFiles = fs.readdirSync("./data");
+
 client.on("ready", () => {
    console.log("I'm ready!");
-});
+}); 
+
 client.on("message", message => {
+  function Play(fileName) {
+          message.member.voiceChannel.join()
+               .then(connection => {
+                 // play the random audio file
+                   const dispatcher = connection.playFile("./data/" + fileName );
+
+                   // disconnect from the voice channel when the quote is over
+                   dispatcher.on("end", () => {
+                       message.member.voiceChannel.leave();
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "AB honor roll all F's you retarded.mp3" + "\n");
+                   });
+               })
+  
+}
 
    // if the sent message was "ping" then respond with "pong"
    if (message.content === "Thank you") {
@@ -25,20 +41,7 @@ client.on("message", message => {
        }
        
        if (message.content === "#1") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "AB honor roll all F's you retarded.mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "AB honor roll all F's you retarded.mp3" + "\n");
-                   });
-               })
+     Play("AB honor roll all F's you retarded.mp3")
        }
        if (message.content === "#2") {
           message.member.voiceChannel.join()
@@ -230,5 +233,4 @@ client.on("message", message => {
     }
     
 });
-
 client.login(process.env.BOT_TOKEN)
