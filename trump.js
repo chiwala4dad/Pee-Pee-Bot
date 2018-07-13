@@ -21,7 +21,7 @@ client.on("message", message => {
    
     } 
    else if (message.content === "#pp play"){ 
-      message.channel.send("What the fuck you tryna listen too *niggggaaaaa*")
+      message.channel.send("What the fuck you tryna listen too *niggggaaaaa* :eyes:  http://tiny.cc/ppBot")
        }
        
        if (message.content === "#1") {
@@ -200,8 +200,8 @@ client.on("message", message => {
                    });
                })
        }
-       if (message.content === "sound list"){
-         message.channel.send("Aight bro peep the list :eyes:  http://tiny.cc/ppBot")
+       if (message.content === "#help"){
+         message.channel.send("Aight so you prolly gonna wanna use -- #pp -- #pp play -- #n (where n is the selction number)" )
        }
     else if (message.content === "#pp") {
 
