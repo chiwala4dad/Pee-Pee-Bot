@@ -20,7 +20,7 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "AB honor roll all F's you retarded.mp3" + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "fileName" + "\n");
                    });
                })
   
