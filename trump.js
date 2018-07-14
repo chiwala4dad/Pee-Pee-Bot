@@ -44,165 +44,36 @@ client.on("message", message => {
      Play("AB honor roll all F's you retarded.mp3")
        }
        if (message.content === "#2") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "About a week ago.mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "About a week ago.mp3" + "\n");
-                   });
-               })
+          Play("About a week ago.mp3")
        }
         if (message.content === "#3") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "ITS LIT.mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "ITS LIT.mp3" + "\n");
-                   });
-               })
+           Play("ITS LIT.mp3")
        }
         if (message.content === "#4") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "Kyle A Boogie Wit Da Hoodie and Aminés 2017 XXL Freshman Cypher (1).mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Kyle A Boogie Wit Da Hoodie and Aminés 2017 XXL Freshman Cypher (1).mp3" + "\n");
-                   });
-               })
+           Play("Kyle A Boogie Wit Da Hoodie and Aminés 2017 XXL Freshman Cypher (1).mp3")
        }
         if (message.content === "#5") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "My names Nino.mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "My names Nino.mp3" + "\n");
-                   });
-               })
+           Play("My names Nino.mp3")
        }
         if (message.content === "#6") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "Not the Yuttas" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Not the Yuttas" + "\n");
-                   });
-               })
+              Play("Not the Yuttas")
        }
         if (message.content === "#7") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "Not the Yuttas.mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Not the Yuttas.mp3" + "\n");
-                   });
-               })
+           Play("Not the Yuttas.mp3")
        }
         if (message.content === "#8") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "Original Ya Ya Ya YEET! Cx.mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Original Ya Ya Ya YEET! Cx.mp3" + "\n");
-                   });
-               })
+           Play("Original Ya Ya Ya YEET! Cx.mp3")
        }
         if (message.content === "#9") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "Pnb rock I just wanna eat ur pussy Dohonna.mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "Pnb rock I just wanna eat ur pussy Dohonna.mp3" + "\n");
-                   });
-               })
+           Play("Pnb rock I just wanna eat ur pussy Dohonna.mp3")
        }
    if (message.content === "#10") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "THE JONTRON RANT.mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "THE JONTRON RANT.mp3" + "\n");
-                   });
-               })
+      Play("THE JONTRON RANT.mp3")
        }
-        if (message.content === "#11") {
-          message.member.voiceChannel.join()
-               .then(connection => {
-
-               
-
-                   // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + "pharogz-cra3y-prod-by-kendox-[AudioTrimmer.com].mp3" );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", () => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "pharogz-cra3y-prod-by-kendox-[AudioTrimmer.com].mp3" + "\n");
-                   });
-               })
-       }
+           if (message.content === "#11") {
+              Play("pharogz-cra3y-prod-by-kendox-[AudioTrimmer.com].mp3")
+           }
+        
        if (message.content === "#help"){
          message.channel.send("Aight so you prolly gonna wanna use -- #pp -- #pp play -- #n (where n is the selction number)" )
        }
