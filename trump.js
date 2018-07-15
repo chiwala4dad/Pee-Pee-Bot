@@ -27,11 +27,6 @@ client.on("message", message => {
                })
   
 }
-if (day === 0) {
-  message.channel.send("It's Syaad's Birthday today!!!!")
-  message.channel.send("#3")
-  
-}
    // if the sent message was "ping" then respond with "pong"
    if (message.content === "Thank you") {
        message.channel.send("Kanye, Very cool!");
@@ -44,7 +39,6 @@ if (day === 0) {
     } 
    else if (message.content === "#pp play"){ 
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa* :eyes:  http://tiny.cc/ppBot")
-      message.channel.send("Test")
        }
        
        if (message.content === "#1") {
