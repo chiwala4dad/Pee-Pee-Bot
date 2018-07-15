@@ -1,3 +1,4 @@
+
 const fs = require("fs");
 const _ = require("underscore");
 const moment = require("moment");
@@ -9,7 +10,6 @@ const audioFiles = fs.readdirSync("./data");
 client.on("ready", () => {
    console.log("I'm ready!");
 }); 
-var day = getday()
 
 
 client.on("message", message => {
