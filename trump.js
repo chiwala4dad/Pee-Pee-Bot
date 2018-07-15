@@ -9,6 +9,8 @@ const audioFiles = fs.readdirSync("./data");
 client.on("ready", () => {
    console.log("I'm ready!");
 }); 
+var day = getday()
+
 
 client.on("message", message => {
   function Play(fileName) {
@@ -20,12 +22,16 @@ client.on("message", message => {
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", () => {
                        message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "fileName" + "\n");
+                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "AB honor roll all F's you retarded.mp3" + "\n");
                    });
                })
   
 }
-
+if (day === 0) {
+  message.channel.send("It's Syaad's Birthday today!!!!")
+  message.channel.send("#3")
+  
+}
    // if the sent message was "ping" then respond with "pong"
    if (message.content === "Thank you") {
        message.channel.send("Kanye, Very cool!");
@@ -38,6 +44,7 @@ client.on("message", message => {
     } 
    else if (message.content === "#pp play"){ 
       message.channel.send("What the fuck you tryna listen too *niggggaaaaa* :eyes:  http://tiny.cc/ppBot")
+      message.channel.send("Test")
        }
        
        if (message.content === "#1") {
