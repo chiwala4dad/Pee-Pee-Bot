@@ -17,7 +17,7 @@ client.on("message", message => {
           message.member.voiceChannel.join()
                .then(connection => {
                  // play the random audio file
-                   const dispatcher = connection.playFile("./data/" + fileName );
+                   const dispatcher = connection.play("./data/" + fileName );
 
                    // disconnect from the voice channel when the quote is over
                    dispatcher.on("end", end => {
