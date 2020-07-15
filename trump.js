@@ -22,7 +22,8 @@ client.on("message", async message => {
        voiceChannel.leave();
        });
 	  }
-				   
+
+    )	   
    // if the sent message was "ping" then respond with "pong"
    if (message.content === "Thank you") {
        message.channel.send("Kanye, Very cool!");
