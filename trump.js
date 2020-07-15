@@ -17,7 +17,7 @@ client.on("message", async message => {
 	  var voiceChannel = message.member.voiceChannel;
 	  voiceChannel.join().then(connection =>
 {
-     const dispatcher = connection.playFile('./data/ITS LIT.mp3');
+     const dispatcher = connection.playFile('/data/ITS LIT.mp3');
      dispatcher.on("end", end => {
        voiceChannel.leave();
        });
