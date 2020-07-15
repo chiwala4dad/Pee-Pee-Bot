@@ -13,22 +13,16 @@ client.on("ready", () => {
 
 
 client.on("message", async message => {
-  function Play(fileName) {
-         if (message.member.voice.channel) {
-		const connection = await message.member.voice.channel.join();
-	}
-               .then(connection => {
-                 // play the random audio file
-                   const dispatcher = connection.play("./data/" + fileName );
-
-                   // disconnect from the voice channel when the quote is over
-                   dispatcher.on("end", end => {
-                       message.member.voiceChannel.leave();
-                       fs.appendFileSync("log.txt", moment().format("YYYY-MM-DD HH:mm:ss.SSS ") + "AB honor roll all F's you retarded.mp3" + "\n");
-                   });
-               })
-  
-}
+	if (message.content === "cheemz")
+	  var voiceChannel = message.member.voiceChannel;
+	  voiceChannel.join().then(connection =>
+{
+     const dispatcher = connection.playFile('./Audio/gab.mp3');
+     dispatcher.on("end", end => {
+       voiceChannel.leave();
+       });
+	  }
+				   
    // if the sent message was "ping" then respond with "pong"
    if (message.content === "Thank you") {
        message.channel.send("Kanye, Very cool!");
