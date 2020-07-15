@@ -12,9 +12,11 @@ client.on("ready", () => {
 }); 
 
 
-client.on("message", message => {
+client.on("message", async message => {
   function Play(fileName) {
-          message.member.voiceChannel.join()
+         if (message.member.voice.channel) {
+		const connection = await message.member.voice.channel.join();
+	}
                .then(connection => {
                  // play the random audio file
                    const dispatcher = connection.play("./data/" + fileName );
