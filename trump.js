@@ -6,9 +6,7 @@ client.on("message", (message) => {
   if(message.content === "cheemz"){
     const voiceChannel = message.member.voice.channel
     voiceChannel.join()
-    then(connection => {
-      connection.play('./data/ITS LIT.mp3');
-   });
+  
   }
 
 
