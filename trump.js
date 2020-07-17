@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const client =  new Discord.Client();
 
 client.on("message", (message) => {
-
+  const voiceChannel = message.member.voice.channel
   if(message.content === "cheemz"){
-    const voiceChannel = message.member.voice.channel
+  
     voiceChannel.join()
   
   }
